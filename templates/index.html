@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+    <form method="post" action="/send">
+    <input type="text" id="msg" name="msg">
+    <input type="submit" value="Send Form">
+    </form>
+    {% if msg %}
+    <p>「{{msg}}」　と投稿しました</p>
+    {% endif %}
+</body>
+</html>
