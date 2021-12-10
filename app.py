@@ -4,8 +4,8 @@ from flask import Flask, session, redirect, render_template, request
 from os.path import join, dirname
 app = Flask(__name__)
 
-C_KEY = 'n5uCj9rR6MS98IZe5gAoyku05'
-C_SECRET = 'ljeWjqGpPgI6GUb9VOU1BdbwezzJsOcMHCYHFyzEImIZmNmhUx'
+C_KEY = ''
+C_SECRET = ''
 CALLBACK_URL = 'http://0.0.0.0:5000'
 app.config['SECRET_KEY'] = os.urandom(24)
 
