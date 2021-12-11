@@ -3,9 +3,9 @@ import tweepy
 from flask import Flask, session, redirect, render_template, request
 app = Flask(__name__)
 
-CONSUMER_KEY = 'n5uCj9rR6MS98IZe5gAoyku05'
-CONSUMER_SECRET = 'n5uCj9rR6MS98IZe5gAoyku05'
-CALLBACK_URL = 'https://flask-water-tweet.azurewebsites.net/'
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
+CALLBACK_URL = os.environ['CALLBACK_URL']
 app.config['SECRET_KEY'] = os.urandom(24)
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET, CALLBACK_URL)
 
