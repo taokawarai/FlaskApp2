@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'flask-water-tweet'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3C18722CC28D48F59D983BCB63E1BA70 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_593B02B7F52A42D4923D0CCA2AEBB634 }}
